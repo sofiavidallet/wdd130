@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Whitewater Adventures</title>
+    <meta name="description"
+      content="Contact Whitewater Adventures for inquiries, reservations, or website suggestions. We are excited to hear from you and help you plan your next trip!">
+    <meta name="author" content="Sofia Vidallet">
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+
+<body>
+
+    <header>
+        <img src="images/logo.png" alt="Rafting Site Logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="company-info">
+            <h1>White Water Rafting Company</h1>
+            <address>
+                123 Main River Street<br>
+                Kolob, California<br>
+                +1 999 999 9999<br>
+                <a href="mailto:info@whitewater.com">info@whitewater.com</a>
+            </address>
+        </section>
+
+        <div class="contact-layout">
+
+            <div class="map-container">
+
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d14160.831233478924!2d-58.8292106!3d-27.4627891!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1785731898620!5m2!1ses!2sar"
+                  width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                  referrerpolicy="strict-origin-when-cross-origin"></iframe>
+
+            </div>
+
+            <form action="#" method="get" class="contact-form">
+
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="user_name" placeholder="Placeholder"
+                      required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="user_email" placeholder="Placeholder"
+                      required>
+                </div>
+
+                <fieldset>
+                    <legend>Message Purpose</legend>
+                    <div class="radio-group">
+                        <input type="radio" id="general" name="purpose" value="General Inquiry"
+                          checked>
+                        <label for="general">General Inquiry</label>
+                    </div>
+                    <div class="radio-group">
+                        <input type="radio" id="reservation" name="purpose"
+                          value="Reservation Question">
+                        <label for="reservation">Reservation Question</label>
+                    </div>
+                    <div class="radio-group">
+                        <input type="radio" id="suggestion" name="purpose"
+                          value="Website Suggestion">
+                        <label for="suggestion">Website Suggestion</label>
+                    </div>
+                </fieldset>
+
+                <div class="form-group message-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="user_message" placeholder="Type here..." rows="4"
+                      required></textarea>
+                </div>
+
+                <div class="checkbox-group">
+                    <input type="checkbox" id="newsletter" name="newsletter" value="subscribe">
+                    <label for="newsletter">Please Subscribe me to the monthly newsletter</label>
+                </div>
+
+                <button type="submit">Get in Touch!</button>
+            </form>
+
+        </div>
+
+        <!-- Perfiles de Empleados -->
+        <section class="employees">
+            <h2>We Are Here to Serve You</h2>
+            <div class="employee-grid">
+                <figure>
+                    <img src="images/employee1.jpg" alt="Employee 1 Profile">
+                    <figcaption>Employee Profile - Senior Guide</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/employee2.jpg" alt="Employee 2 Profile">
+                    <figcaption>Employee Profile - Base Manager</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/employee3.jpg" alt="Employee 3 Profile">
+                    <figcaption>Employee Profile - Safety Instructor</figcaption>
+                </figure>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Whitewater Adventures | Sofia Vidallet</p>
+        <nav class="socialmedia">
+            <a href="https://facebook.com">
+                <img src="images/facebook.png" alt="Facebook Icon">
+            </a>
+            <a href="https://linkedin.com">
+                <img src="images/linkedin.png" alt="LinkedIn Icon">
+            </a>
+            <a href="https://instagram.com">
+                <img src="images/instagram.png" alt="Instagram Icon">
+            </a>
+        </nav>
+    </footer>
+
+</body>
+
+</html>

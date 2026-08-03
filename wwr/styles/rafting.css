@@ -71,7 +71,7 @@ header nav ul li a {
     height: auto;
 }
 
-h1 {
+.hero h1 {
     position: absolute;
     top: 20px;
     width: 100%;
@@ -168,4 +168,130 @@ footer {
 .socialmedia img {
     width: 30px;
     height: auto;
+}
+
+/* --- Company Info --- */
+
+.company-info {
+    text-align: center;
+    margin: 2rem auto;
+}
+
+.company-info address {
+    font-style: normal;
+    line-height: 1.5;
+    margin-top: 10px;
+}
+
+.contact-layout {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+    margin: 2rem auto;
+}
+
+.map-container,
+.contact-form {
+    flex: 1;
+}
+
+.map-container iframe {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 5px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: var(--accent1-color);
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: inherit;
+}
+
+.contact-form fieldset {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 4px;
+}
+
+.contact-form legend {
+    font-weight: bold;
+    padding: 0 0.5rem;
+    color: var(--primary-color);
+}
+
+.radio-group,
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.contact-form button[type="submit"] {
+    padding: 1rem;
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button[type="submit"]:hover {
+    background-color: var(--accent1-color);
+}
+
+.employees {
+    text-align: center;
+    margin: 3rem auto;
+}
+
+.employee-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-top: 1.5rem;
+}
+
+.employee-grid figure {
+    flex: 1;
+    margin: 0;
+    text-align: center;
+}
+
+.employee-grid img {
+    width: 100%;
+    max-width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 0.5rem;
+}
+
+.employee-grid figcaption {
+    font-size: 0.9rem;
+    font-weight: bold;
 }
