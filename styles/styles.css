@@ -17,24 +17,43 @@ body {
     --aside-bg: #eee;
 }
 
+header,
+.grid,
+footer {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
 nav {
     background-color: var(--primary-color);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 nav a {
     color: var(--light-text);
     text-decoration: none;
     display: block;
-    padding: 10px 1rem;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 700;
 }
 
 h1 {
     color: var(--primary-color);
     margin: 1rem;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.grid {
+    display: grid;
+    align-items: center;
 }
 
 main {
-    max-width: 640px;
+    grid-column: 2 / 3;
     margin: 1rem;
 }
 
@@ -56,7 +75,8 @@ aside {
     width: 20rem;
     text-align: center;
     position: relative;
-    margin-top: 2rem;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
 }
 
 aside img {
@@ -79,6 +99,7 @@ footer {
     border-top: 1px solid var(--border-color);
     text-align: center;
     padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 .box {
